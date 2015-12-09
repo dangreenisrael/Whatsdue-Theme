@@ -1,0 +1,45 @@
+.navbar {
+  font-family: gibson-light, sans-serif;
+  @height: 50px;
+  background-color: (@white);
+  opacity: 0;
+  width: 100%;
+  height: (@height);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: opacity 0.4s;
+  img {
+    height: (@height);
+    padding: 10px 0;
+  }
+  ul.main-menu{
+    float:right;
+    li {
+      float: left;
+      list-style-type: none;
+      line-height: (@height);
+      font-size: 14px;
+      padding: 0 30px;
+      color: (@dark-grey);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      &.highlighted{
+        background-color: (@blue);
+        a{
+          color: (@white);
+        }
+      }
+      a {
+        color: @dark-grey;
+        font-weight: 900;
+      }
+      i{
+        color: (@light-grey);
+        font-weight: 100;
+        text-transform: none;
+      }
+    }
+
+  }
+}

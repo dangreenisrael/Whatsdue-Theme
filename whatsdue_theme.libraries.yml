@@ -1,0 +1,25 @@
+front-page:
+  version: VERSION
+  css:
+    theme:
+      css/front-page.css: {}
+
+  dependencies:
+    - core/jquery
+
+blog:
+  version: VERSION
+  css:
+    theme:
+      css/clean-blog.css: {}
+  dependencies:
+    - core/jquery
+
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/bootstrap.css: {}
+      css/global.css: {}
+  js:
+    js/scripts.js: {}

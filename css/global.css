@@ -1,0 +1,130 @@
+@font-face {
+  font-family: gibson;
+  src: url('../fonts/gibson.ttf');
+}
+@font-face {
+  font-family: gibson-light;
+  src: url('../fonts/gibson-light.ttf');
+}
+@font-face {
+  font-family: gibson-bold;
+  src: url('../fonts/gibson-bold.ttf');
+}
+#main-footer {
+  font-family: gibson-light, sans-serif;
+  padding: 0;
+}
+#main-footer p {
+  margin: 0 0 10px;
+}
+#main-footer input {
+  font-size: 14px;
+}
+#main-footer ul a {
+  color: #000000;
+}
+#main-footer ul li {
+  list-style-type: none;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+#main-footer .social ul {
+  padding: 0;
+}
+#main-footer .social ul li {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+#main-footer .social ul li:last-of-type {
+  margin-right: 0;
+}
+@media (min-width: 1020px) {
+  #main-footer .social ul li {
+    width: 21%;
+    margin-right: 13%;
+  }
+  #main-footer .social ul li:last-of-type {
+    margin-right: 10%;
+  }
+}
+#main-footer .social ul img {
+  width: 100%;
+}
+#main-footer p {
+  font-size: 16px;
+}
+#main-footer form input {
+  border: none;
+  padding: 10px;
+  float: left;
+  border-radius: 0;
+}
+#main-footer form .email {
+  background-color: #d2d4d3;
+  width: 60%;
+}
+#main-footer form .button {
+  background-color: #39bacd;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 40%;
+}
+.navbar {
+  font-family: gibson-light, sans-serif;
+  background-color: #ffffff;
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: opacity 0.4s;
+}
+.navbar img {
+  height: 50px;
+  padding: 10px 0;
+}
+.navbar ul.main-menu {
+  float: right;
+}
+.navbar ul.main-menu li {
+  float: left;
+  list-style-type: none;
+  line-height: 50px;
+  font-size: 14px;
+  padding: 0 30px;
+  color: #000000;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.navbar ul.main-menu li.highlighted {
+  background-color: #39bacd;
+}
+.navbar ul.main-menu li.highlighted a {
+  color: #ffffff;
+}
+.navbar ul.main-menu li a {
+  color: #000000;
+  font-weight: 900;
+}
+.navbar ul.main-menu li i {
+  color: #d2d4d3;
+  font-weight: 100;
+  text-transform: none;
+}
+.row {
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .row .container {
+    padding: 40px 100px;
+  }
+}
+@media (max-width: 769) {
+  .hide-mobile {
+    display: none;
+  }
+}

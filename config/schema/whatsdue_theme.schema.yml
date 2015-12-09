@@ -1,0 +1,4 @@
+# Schema for the configuration files for the THEMENAME theme.
+whatsdue_theme.settings:
+  type: theme_settings
+  label: 'WhatsDue Theme Settings'

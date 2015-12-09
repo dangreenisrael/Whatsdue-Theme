@@ -1,0 +1,490 @@
+/*
+ * Site-wide
+ */
+@font-face {
+  font-family: gibson;
+  src: url('../fonts/gibson.ttf');
+}
+@font-face {
+  font-family: gibson-light;
+  src: url('../fonts/gibson-light.ttf');
+}
+@font-face {
+  font-family: gibson-bold;
+  src: url('../fonts/gibson-bold.ttf');
+}
+@media all {
+  body {
+    background-color: #333333;
+    background-image: url('../assets/img/teacher-with-students.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: gibson-light, sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    text-transform: uppercase;
+    color: #000000;
+  }
+  h1 {
+    font-family: gibson-bold, sans-serif;
+  }
+  h2,
+  h3,
+  h4 {
+    font-family: gibson, sans-serif;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  p {
+    color: #000000;
+    font-weight: 200;
+  }
+  .green-text {
+    color: #98c03c;
+  }
+  .green-background {
+    background-color: #98c03c;
+  }
+  .white-background {
+    background-color: #ffffff;
+  }
+  a {
+    color: #ffffff;
+  }
+  .btn-green {
+    background-color: #98c03c;
+    border-color: #98c03c;
+    color: #ffffff;
+  }
+  img {
+    max-height: 100%;
+  }
+  .btn-white-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .btn-white-outline:hover {
+    color: #ffffff;
+  }
+  .middle-line-grey {
+    background-image: url("../assets/img/vertical-line-grey.png");
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+  .middle-line-white {
+    background-image: url("../assets/img/vertical-line-white.png");
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+  main > section {
+    padding: 50px 0;
+  }
+  .lined-pattern {
+    background-image: url("../assets/img/lined-pattern.png");
+    background-size: 100px;
+  }
+  ::-webkit-input-placeholder {
+    color: #000000;
+    font-style: italic;
+  }
+  :-moz-placeholder {
+    color: #000000;
+    font-style: italic;
+  }
+  ::-moz-placeholder {
+    color: #000000;
+    font-style: italic;
+  }
+  .error {
+    color: firebrick;
+    font-weight: bolder;
+  }
+}
+body {
+  padding-top: 50px;
+}
+#splash {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  color: #ffffff;
+  padding: 0 50px;
+}
+#splash h1 {
+  font-size: 100px;
+  line-height: 85px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: none;
+}
+@media (max-width: 1020px) {
+  #splash h1 {
+    font-size: 80px;
+  }
+}
+#splash hr {
+  height: 2px;
+  width: 100px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+}
+#splash p {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#splash .row .col-sm-12 {
+  padding-left: 0;
+}
+#splash .row .col-sm-12 img.button {
+  height: 55px;
+  width: auto;
+}
+#splash .row .col-sm-12 a:last-child {
+  margin-left: 10px;
+}
+#splash .sign-up {
+  width: 355px;
+  clear: both;
+}
+#splash .sign-up p {
+  font-size: 15px;
+  text-align: center;
+}
+#splash .sign-up .btn {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+#splash .sign-up .left {
+  width: 70%;
+}
+#splash .sign-up .right {
+  width: 25%;
+  float: right;
+}
+#students {
+  width: 100%;
+  padding-bottom: 0;
+}
+#students a {
+  color: #39bacd;
+}
+#students p {
+  font-size: 16px;
+}
+#students .devices {
+  border-bottom: #000000 solid 5px;
+}
+#students .col-sm-3 {
+  margin-top: 10px;
+}
+#students header {
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+#students .centered {
+  width: 400px;
+  margin: 50px auto 10px;
+  display: block;
+  text-align: center;
+}
+#students .centered img.large-logo {
+  width: 50%;
+  margin: 0 25%;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+#students .centered h2 {
+  font-size: 36px;
+  color: #000000;
+  font-weight: 900;
+}
+#students .divider {
+  height: 80px;
+  padding-top: 40px;
+}
+#students .divider > div {
+  width: 48%;
+  border-bottom: dashed 2px #000000;
+  float: left;
+}
+#students .divider .left {
+  margin-right: 2%;
+}
+#students .divider .right {
+  margin-left: 52%;
+}
+#students .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#students .container section {
+  padding-top: 40px;
+}
+#students .container > div {
+  padding: 0;
+}
+#students .container img {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+}
+#students .container img:first-child {
+  padding-right: 1px;
+}
+#students .container img:nth-child(2) {
+  padding-left: 1px;
+}
+#students .container h3 {
+  font-size: 18px;
+}
+#students .container header {
+  color: black;
+  font-weight: 900;
+  padding-top: 10px;
+}
+#students .container header:last-of-type {
+  padding-top: 40px;
+}
+#how-it-works {
+  background-color: #39bacd;
+  text-align: center;
+}
+#how-it-works * {
+  color: #ffffff;
+}
+#how-it-works header h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+#how-it-works header p {
+  letter-spacing: 1.5px;
+  font-weight: 100;
+}
+#how-it-works > div {
+  padding-top: 40px;
+}
+#how-it-works > div > div {
+  width: 12.5%;
+  border-bottom: dotted #ffffff 3px;
+  padding-top: 45px;
+}
+#how-it-works > div figure img {
+  width: 90px;
+}
+#how-it-works > div figure h3 {
+  font-size: 18px;
+  font-style: italic;
+  text-transform: none;
+}
+#how-it-works > div figure p {
+  font-size: 14px;
+  font-weight: 100;
+}
+#team {
+  padding-bottom: 0;
+  display: none;
+}
+#team .container {
+  text-align: center;
+}
+#team .container header h2 {
+  font-size: 22px;
+}
+#team .container strong {
+  font-weight: bolder;
+  font-size: 18px;
+}
+#team .container .top :first-child img {
+  margin-left: 0;
+}
+#team .container .top :last-child img {
+  margin-right: 0;
+}
+#team .container .top {
+  padding-top: 30px;
+}
+#team .container .bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#team .container .bottom div:first-child figure {
+  margin-left: 150px;
+}
+#team .container .bottom div:last-child figure {
+  margin-right: 150px;
+}
+#team .container .img-circle {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+#testimonials {
+  background-color: #ffffff;
+  padding: 0;
+  text-align: center;
+  font-size: 12pt;
+}
+#testimonials section {
+  padding: 20px 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+#testimonials section div {
+  padding: 0 40px;
+}
+#testimonials section div p.quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+  font-family: serif;
+}
+#testimonials section div p.quote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.1em;
+  vertical-align: -0.4em;
+  font-family: serif;
+}
+#testimonials section div strong {
+  font-family: gibson-bold, sans-serif;
+}
+#testimonials header h2 {
+  text-align: center;
+  padding: 60px 0 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+#download {
+  padding-top: 50px;
+}
+#download .btn {
+  width: 490px;
+  margin: auto;
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#bottom-footer div {
+  padding: 20px 0;
+}
+#bottom-footer div small {
+  color: #d2d4d3;
+}
+#bottom-footer #mix-panel {
+  position: absolute;
+  left: 200px;
+  margin-top: 10px;
+}
+/*
+ *  Media Query Helpers
+ */
+@media (max-width: 1020px) {
+  .hide-sm {
+    display: none;
+  }
+}
+/*
+ * Phone Version
+ */
+#mobile {
+  display: none;
+}
+@media (max-width: 760px) {
+  body {
+    background: none;
+    padding-top: 0;
+  }
+  body > *:not(#mobile) {
+    display: none;
+  }
+  #mobile {
+    display: block !important;
+    padding: 20px;
+  }
+  #mobile figure.logo img {
+    width: 125px;
+    display: block;
+    margin: auto;
+  }
+  #mobile figure.logo figcaption h1 {
+    font-size: 40px;
+    font-family: gibson-bold, sans-serif;
+    text-align: center;
+    text-transform: none;
+  }
+  #mobile figure.logo figcaption p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #mobile figure.teacher-signup {
+    margin-top: 10px;
+  }
+  #mobile figure.teacher-signup div {
+    max-width: 400px;
+    margin: auto;
+  }
+  #mobile figure.teacher-signup div .btn {
+    padding: 10px 30px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 900;
+  }
+  #mobile figure.teacher-signup div .btn.left {
+    width: 60%;
+    float: left;
+  }
+  #mobile figure.teacher-signup div .btn.right {
+    width: 35%;
+    float: right;
+    color: #39bacd;
+    border: solid #39bacd 2px;
+  }
+  #mobile figure.teacher-signup figcaption {
+    clear: both;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  #mobile figure.download {
+    margin-top: 20px;
+  }
+  #mobile figure.download figcaption {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  #mobile figure.download figcaption h2 {
+    font-size: 20px;
+  }
+  #mobile figure.download img {
+    width: 200px;
+    margin: 10px auto;
+  }
+  #mobile figure.download .android {
+    width: 46.5%;
+  }
+  #mobile figure.download .ios {
+    width: 52.5%;
+  }
+}

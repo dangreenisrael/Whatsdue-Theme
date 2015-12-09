@@ -1,0 +1,70 @@
+
+#main-footer{
+  font-family: gibson-light, sans-serif;
+  padding: 0;
+  p{
+    margin: 0 0 10px;
+  }
+  input{
+    font-size: 14px;
+  }
+  ul{
+    a{
+      color: @dark-grey;
+    }
+    li{
+      list-style-type: none;
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+  }
+  .social{
+    ul {
+      padding: 0;
+      li {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+      }
+
+      li:last-of-type{
+        margin-right: 0;
+      }
+      @media (min-width: @tablet) {
+        li{
+          width: 21%;
+          margin-right: 13%;
+        }
+        li:last-of-type{
+          margin-right: 10%;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+  p{
+    font-size: 16px;
+  }
+  form{
+
+    input{
+      border: none;
+      padding: 10px;
+      float: left;
+      border-radius: 0;
+    }
+    .email{
+      background-color: @light-grey;
+      width: 60%;
+    }
+    .button{
+      background-color: @blue;
+      color: @white;
+      padding:  10px 20px;
+      width: 40%;
+
+    }
+  }
+}
