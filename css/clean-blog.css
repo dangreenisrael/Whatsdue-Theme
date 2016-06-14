@@ -217,7 +217,7 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #39bacd;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
@@ -242,7 +242,7 @@ hr.small {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #39bacd;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -407,10 +407,13 @@ body {
 }
 .intro-header {
   margin-bottom: 0;
+  text-align: center;
 }
-.blog-post h2,
 .blog-post .author,
 .blog-post .featured-image,
 .blog-post .post-meta {
   display: none;
+}
+.blog-post a {
+  color: #39bacd;
 }

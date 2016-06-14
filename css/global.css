@@ -86,7 +86,8 @@
   padding: 10px 0;
 }
 .navbar ul.main-menu {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 .navbar ul.main-menu li {
   float: left;
@@ -123,8 +124,16 @@
     padding: 40px 100px;
   }
 }
-@media (max-width: 769) {
+@media (max-width: 769px) {
   .hide-mobile {
+    display: none;
+  }
+  .zopim {
+    display: none!important;
+  }
+}
+@media (max-width: 367px) {
+  .hide-handheld {
     display: none;
   }
 }

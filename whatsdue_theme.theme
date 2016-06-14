@@ -48,7 +48,6 @@ function whatsdue_theme_css_alter(&$css, AttachedAssetsInterface $assets) {
     ),
   );
 }
-
 /**
  * Implements hook_blog_preprocess_page().
  */
@@ -89,9 +88,20 @@ function whatsdue_theme_preprocess_node(&$variables) {
     $variables['attributes']['class'][] = 'post-preview';
     $variables['title_attributes']['class'][] = 'post-title';
     $variables['content_attributes']['class'][] = 'post-subtitle';
+
   }
   else {
     $variables['content_attributes']['class'][] = 'content';
   }
 }
+
+//function whatsdue_theme_preprocess_html(&$variables) {
+//  echo "2";
+//}
+
+//function whatsdue_theme_page_attachments_alter(&$page) {
+//  //var_dump($page);
+//}
+
+
 

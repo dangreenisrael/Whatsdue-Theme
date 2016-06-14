@@ -2,10 +2,12 @@
 @import "footer";
 @import "header";
 
+
 .row {
   max-width: 1170px;
   margin: auto;
   position: relative;
+
   @media (min-width: @desktop) {
     .container {
       padding: 40px 100px;
@@ -13,8 +15,19 @@
   }
 }
 
+
+
 @media (max-width: @iPad) {
   .hide-mobile{
+    display: none;
+  }
+  .zopim{
+    display: none!important;
+  }
+}
+
+@media (max-width: @handheld){
+  .hide-handheld{
     display: none;
   }
 }
